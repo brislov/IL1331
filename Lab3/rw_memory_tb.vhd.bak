@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.cpu_package.all;
+
+
+entity rw_memory_tb is
+end entity;
+
+
+architecture behavior of rw_memory_tb is
+	entity rw_memory is
+		port(
+			adr  : in address_bus;
+			data : inout data_bus;
+			clk  : in std_logic;
+			ce   : in std_logic;
+			rw   : in std_logic
+		);
+	end entity;
+begin
+end architecture;

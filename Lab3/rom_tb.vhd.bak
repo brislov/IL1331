@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.cpu_package.all;
+
+
+entity rom_tb is -- read only memory
+end entity;
+
+
+architecture rtl of rom_tb is
+	begin
+end architecture;

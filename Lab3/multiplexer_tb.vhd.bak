@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.cpu_package.all;
+
+
+entity multiplexer_tb is 
+end entity;
+
+
+architecture rtl of multiplexer is
+	component multiplexer
+		port(
+			sel       : in std_logic_vector(1 downto 0);	
+			data_in_2 : in data_word;
+			data_in_1 : in data_bus; -- potiential type problem...
+			data_in_0 : in data_word;
+			data_out  : out data_word
+		);
+	end component;
+	
+	signal sel       : in std_logic_vector(1 downto 0) := (others => '0');	
+	signal data_in_2 : in data_word := (others => '0');
+	signal data_in_1 : in data_bus := (others => '0'); 
+	signal data_in_0 : in data_word := (others => '0');
+	signal data_out  : out data_word
+	
+	begin
+	UUT: multiplexer port map(sel, data_in_2, data_in_1, data_in_0, data_out);
+	
+	test: process
+		begin
+		
+	end process;
+end architecture;

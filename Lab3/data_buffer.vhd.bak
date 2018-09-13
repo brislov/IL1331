@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity data_buffer is
+	port(
+		out_en
+		data_in
+		
+	);
