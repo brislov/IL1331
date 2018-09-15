@@ -1,0 +1,128 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Markus Brislöv\Documents\IL1331 - VHDL Design\Projects\lab2\simulation\modelsim
+Ealu
+Z1 w1536649073
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z4 DPx4 work 11 cpu_package 0 22 bk7QD_;T;;E4z5kMZAz5e2
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\Markus Brislöv\Documents\IL1331 - VHDL Design\Projects\lab2\simulation\modelsim
+Z8 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU.vhd
+Z9 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU.vhd
+l0
+L6
+V0Ql]caMbBF[DKd8QoTBHk1
+Z10 OV;C;10.1d;51
+31
+Z11 !s108 1536651328.763000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU.vhd|
+Z13 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU.vhd|
+Z14 o-93 -work work -O0
+Z15 tExplicit 1
+!s100 ijUOX[n9@XXdgFeQO[:GG2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 alu 0 22 0Ql]caMbBF[DKd8QoTBHk1
+l25
+L21
+V?aD0gbMiMJCeB7mX7TK3l0
+!s100 0_cAk]Iam?2fKbCbL2?Ia1
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!i10b 1
+Ealu_tb
+Z16 w1536651304
+R2
+R3
+R4
+R5
+R6
+R7
+Z17 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU_TB.vhd
+Z18 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU_TB.vhd
+l0
+L6
+VQ1K;o2D__d<J;Ge6GoXBQ3
+R10
+31
+Z19 !s108 1536651328.535000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU_TB.vhd|
+Z21 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/ALU_TB.vhd|
+R14
+R15
+!s100 [[]gQ4_z1UP5jMo[b<E;<3
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 alu_tb 0 22 Q1K;o2D__d<J;Ge6GoXBQ3
+l33
+L10
+V9B5J`5KRezf3=MNZG37j10
+R10
+31
+R19
+R20
+R21
+R14
+R15
+!s100 S3fm`6o]GfHD4[Z3f^NmD1
+!i10b 1
+Pcpu_package
+R2
+R3
+R5
+R6
+Z22 w1536590787
+R7
+Z23 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/CPU_package.vhd
+Z24 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/CPU_package.vhd
+l0
+L6
+Vbk7QD_;T;;E4z5kMZAz5e2
+!s100 58A<hZ1co95TPX>IGLjA;0
+R10
+31
+b1
+!i10b 1
+Z25 !s108 1536651328.930000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/CPU_package.vhd|
+Z27 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/Projects/lab2/CPU_package.vhd|
+R14
+R15
+Bbody
+R4
+R2
+R3
+R5
+R6
+l0
+L29
+Z28 VmVN650CU[FWNDi6Ydj>:33
+Z29 !s100 ]bk8G]Ha1aNi?Ei7z]RIV3
+R10
+31
+!i10b 1
+R25
+R26
+R27
+R14
+R15
+nbody

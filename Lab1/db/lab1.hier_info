@@ -1,0 +1,78 @@
+|carry_lookahead_adder
+i_num1[0] => w_g[0].IN0
+i_num1[0] => w_p[0].IN0
+i_num1[0] => full_adder:generate_full_adders:0:FAx.i_bit1
+i_num1[1] => w_g[1].IN0
+i_num1[1] => w_p[1].IN0
+i_num1[1] => full_adder:generate_full_adders:1:FAx.i_bit1
+i_num1[2] => w_g[2].IN0
+i_num1[2] => w_p[2].IN0
+i_num1[2] => full_adder:generate_full_adders:2:FAx.i_bit1
+i_num1[3] => w_g[3].IN0
+i_num1[3] => w_p[3].IN0
+i_num1[3] => full_adder:generate_full_adders:3:FAx.i_bit1
+i_num2[0] => w_g[0].IN1
+i_num2[0] => w_p[0].IN1
+i_num2[0] => full_adder:generate_full_adders:0:FAx.i_bit2
+i_num2[1] => w_g[1].IN1
+i_num2[1] => w_p[1].IN1
+i_num2[1] => full_adder:generate_full_adders:1:FAx.i_bit2
+i_num2[2] => w_g[2].IN1
+i_num2[2] => w_p[2].IN1
+i_num2[2] => full_adder:generate_full_adders:2:FAx.i_bit2
+i_num2[3] => w_g[3].IN1
+i_num2[3] => w_p[3].IN1
+i_num2[3] => full_adder:generate_full_adders:3:FAx.i_bit2
+i_cin => w_c.IN1
+i_cin => full_adder:generate_full_adders:0:FAx.i_carry
+o_cout <= w_c.DB_MAX_OUTPUT_PORT_TYPE
+o_result[0] <= full_adder:generate_full_adders:0:FAx.o_sum
+o_result[1] <= full_adder:generate_full_adders:1:FAx.o_sum
+o_result[2] <= full_adder:generate_full_adders:2:FAx.o_sum
+o_result[3] <= full_adder:generate_full_adders:3:FAx.o_sum
+
+
+|carry_lookahead_adder|full_adder:\generate_full_adders:0:FAx
+i_bit1 => o_carry.IN0
+i_bit1 => o_carry.IN0
+i_bit2 => o_carry.IN1
+i_bit2 => o_carry.IN1
+i_carry => o_carry.IN1
+i_carry => o_sum.IN1
+o_carry <= o_carry.DB_MAX_OUTPUT_PORT_TYPE
+o_sum <= o_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_lookahead_adder|full_adder:\generate_full_adders:1:FAx
+i_bit1 => o_carry.IN0
+i_bit1 => o_carry.IN0
+i_bit2 => o_carry.IN1
+i_bit2 => o_carry.IN1
+i_carry => o_carry.IN1
+i_carry => o_sum.IN1
+o_carry <= o_carry.DB_MAX_OUTPUT_PORT_TYPE
+o_sum <= o_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_lookahead_adder|full_adder:\generate_full_adders:2:FAx
+i_bit1 => o_carry.IN0
+i_bit1 => o_carry.IN0
+i_bit2 => o_carry.IN1
+i_bit2 => o_carry.IN1
+i_carry => o_carry.IN1
+i_carry => o_sum.IN1
+o_carry <= o_carry.DB_MAX_OUTPUT_PORT_TYPE
+o_sum <= o_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_lookahead_adder|full_adder:\generate_full_adders:3:FAx
+i_bit1 => o_carry.IN0
+i_bit1 => o_carry.IN0
+i_bit2 => o_carry.IN1
+i_bit2 => o_carry.IN1
+i_carry => o_carry.IN1
+i_carry => o_sum.IN1
+o_carry <= o_carry.DB_MAX_OUTPUT_PORT_TYPE
+o_sum <= o_sum.DB_MAX_OUTPUT_PORT_TYPE
+
+

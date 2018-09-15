@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Markus Brislöv\Documents\IL1331 - VHDL Design\VHDL-Design\Lab1\simulation\modelsim
+Ecarry_lookahead_adder
+Z1 w1536098405
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Markus Brislöv\Documents\IL1331 - VHDL Design\VHDL-Design\Lab1\simulation\modelsim
+Z5 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/carry_lookahead_adder.vhd
+Z6 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/carry_lookahead_adder.vhd
+l0
+L4
+VVf`b6IBYVgAzP;Y74m9cX3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1537031768.139000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/carry_lookahead_adder.vhd|
+Z10 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/carry_lookahead_adder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 eT;eAYm_L]`i1kTgHMhjF3
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 21 carry_lookahead_adder 0 22 Vf`b6IBYVgAzP;Y74m9cX3
+l28
+L14
+Vd=m[k6_klQ>NA<DENBAU:3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 RhcfodbWOAZki2g8JmOF<0
+!i10b 1
+Efull_adder
+Z13 w1536086216
+R2
+R3
+R4
+Z14 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/full_adder.vhd
+Z15 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/full_adder.vhd
+l0
+L4
+V2ooiMVM`aI3QFYVCaP`bi3
+!s100 RE?=^Ojl;]heElfG6z8mT0
+R7
+31
+!i10b 1
+Z16 !s108 1537031768.561000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/full_adder.vhd|
+Z18 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/full_adder.vhd|
+R11
+R12
+Abehavior
+R2
+R3
+Z19 DEx4 work 10 full_adder 0 22 2ooiMVM`aI3QFYVCaP`bi3
+l15
+L14
+Z20 Vb5ko54ALl7gOSS8LRHHmO3
+Z21 !s100 ;92zd7EmfC9X16UgT>L_41
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12
+Eripple_carry_adder
+Z22 w1536087241
+R2
+R3
+R4
+Z23 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder.vhd
+Z24 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder.vhd
+l0
+L4
+V2VcV6RjL^GLz[MC;naCM41
+R7
+31
+Z25 !s108 1537031768.409000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder.vhd|
+Z27 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder.vhd|
+R11
+R12
+!s100 gFhJ]l_Y9IOZGHZHaJ?O=3
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 18 ripple_carry_adder 0 22 2VcV6RjL^GLz[MC;naCM41
+l27
+L14
+Ve65[>1J<KCSh75iH8PTPZ2
+R7
+31
+R25
+R26
+R27
+R11
+R12
+!s100 UKfm1EEQVEW4eNSX4]TU[2
+!i10b 1
+Eripple_carry_adder_tb
+Z28 w1536221505
+R2
+R3
+R4
+Z29 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder_tb.vhd
+Z30 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder_tb.vhd
+l0
+L4
+VJXdKn4MCC2fl=82E<dIk;0
+R7
+31
+Z31 !s108 1537031768.270000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder_tb.vhd|
+Z33 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab1/ripple_carry_adder_tb.vhd|
+R11
+R12
+!s100 ^`cVUn44eB=V_lAQon6YY3
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 21 ripple_carry_adder_tb 0 22 JXdKn4MCC2fl=82E<dIk;0
+l22
+L7
+V=ATmjCC^HUm0JS9<TX3_o2
+R7
+31
+R31
+R32
+R33
+R11
+R12
+!s100 4WCh2>o7ZObY<n4egH[7d3
+!i10b 1

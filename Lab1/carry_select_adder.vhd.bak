@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity carry_select_adder is -- 8 bit
+	port(
+		a         : in std_logic_vector(7 downto 0);
+		b         : in std_logic_vector(7 downto 0);
+		carry_in  : in std_logic;
+		sum       : out std_logic_vector(7 downto 0);
+		carry_out : out std_logic
+	);
+end entity;
+
+architecture behavior of carry_select_adder is
+	component ripple_carry_adder
+		port(
+			i_num1 : in std_logic_vector(3 downto 0); 
+			i_num2 : in std_logic_vector(3 downto 0);
+			i_cin  : in std_logic;
+			o_cout : out std_logic;
+			o_sum  : out std_logic_vector(3 downto 0)
+		);

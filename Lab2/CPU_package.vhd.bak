@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+package CPU_package is
+	
+	constant address_size : std_logic_vector(3 downto 0);
+	constant data_size : std_logic_vector(3 downto 0);
+	constant operation_size : std_logic_vector(3 downto 0);
+	constant instruction_size : std_logic_vector(9 downto 0);
+	
+	type data_types is record
+		data_word : data_size;
+		address_bus : address_size;
+		data_bus : data_size;
+		instruction_bus : instruction_size;
+		program_word : instruction_size;
+		command_word : operation_size;
+	end record data_types;
+	
+	
+		
