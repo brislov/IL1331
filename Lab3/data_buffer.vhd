@@ -19,7 +19,7 @@ architecture rtl of data_buffer is
 		if out_en = '1' then
 			data_out <= data_in;
 		else
-			data_out <= "ZZZZ";
+			data_out <= (others => 'Z');
 		end if;
 	end process;
 end architecture;

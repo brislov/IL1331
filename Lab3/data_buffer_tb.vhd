@@ -17,7 +17,7 @@ architecture behavior of data_buffer_tb is
 	
 	signal out_en   : std_logic := '0';
 	signal data_in  : data_word := (others => '0');
-	signal data_out : data_bus := (others => '0'); 
+	signal data_out : data_bus; 
 	
 	begin
 	UUT: data_buffer port map(out_en, data_in, data_out);

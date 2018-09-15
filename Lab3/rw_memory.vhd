@@ -16,19 +16,20 @@ end entity;
 
 
 architecture rtl of rw_memory is
-type data_bus_array is array (14 downto 0) of data_bus;
-signal data_buses: data_bus_array;
-begin
-	process(adr, data, clk, ce, rw)
-		begin
-		if ce = '1' then
-			data <= "ZZZZ";
-		else
-			if rw = '0' and rising_edge(clk) then
-				data_buses(to_integer(unsigned(adr))) <= data;
-			else
-				data <= data_buses(to_integer(unsigned(adr)));
+	
+	type data_buses is array (15 downto 0) of std_logic_vector(3 downto 0);
+	signal mem : data_buses;
+	
+	begin
+	
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			if (ce = '0' and rw = '0') then
+				mem(to_integer(unsigned(adr))) <= data;
 			end if;
 		end if;
 	end process;
+	data <= mem(to_integer(unsigned(adr))) when (ce = '0' and rw = '1') else (others =>'Z');
+	
 end architecture;
