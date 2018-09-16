@@ -32,7 +32,17 @@
 # -- Compiling entity rw_memory
 # -- Compiling architecture rtl of rw_memory
 # 
-# vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd}
+# vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package cpu_package
+# -- Compiling entity register_file_tb
+# -- Compiling architecture behavior of register_file_tb
+# vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -41,19 +51,8 @@
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_SIGNED
 # -- Loading package cpu_package
-# -- Compiling entity rw_memory_tb
-# -- Compiling architecture behavior of rw_memory_tb
-# vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_SIGNED
-# -- Loading package cpu_package
-# -- Compiling entity rw_memory
-# -- Compiling architecture rtl of rw_memory
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
 # vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/cpu_package.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -65,30 +64,30 @@
 # -- Compiling package body cpu_package
 # -- Loading package cpu_package
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  rw_memory_tb
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps rw_memory_tb 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  register_file_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps register_file_tb 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
 # Loading work.cpu_package(body)
-# Loading work.rw_memory_tb(behavior)
-# Loading work.rw_memory(rtl)
+# Loading work.register_file_tb(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.register_file(rtl)
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Markus Brislöv  Hostname: DELLXPS139360  ProcessID: 10168
 # 
-#           Attempting to use alternate WLF file "./wlftn6bkfj".
+#           Attempting to use alternate WLF file "./wlfty9g68k".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftn6bkfj
+#           Using alternate file: ./wlfty9g68k
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 100 ns
+# run 80 ns

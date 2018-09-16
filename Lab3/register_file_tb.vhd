@@ -22,21 +22,21 @@ architecture behavior of register_file_tb is
 	end component;
 	
 	signal clk : std_logic := '0';
-	signal data_in, data_out_1, data_out_0 : data_word := (others => '0');
-	signal sel_in     : std_logic_vector(1 downto 0) := (others => '0');
-	signal sel_out_1  : std_logic_vector(1 downto 0) := (others => '0');
-	signal sel_out_0  : std_logic_vector(1 downto 0) := (others => '0');
-	signal rw_reg     : std_logic := '1';
+	signal data_in, data_out_1, data_out_0 : data_word;
+	signal sel_in     : std_logic_vector(1 downto 0);
+	signal sel_out_1  : std_logic_vector(1 downto 0);
+	signal sel_out_0  : std_logic_vector(1 downto 0);
+	signal rw_reg     : std_logic;
 	
 	begin
-	UUT: register_file port map(clk, data_in, data_out_1, data_out_0, sel_in, sel_out_1, sel_out_0, rw_reg);
+	unit: register_file port map(clk, data_in, data_out_1, data_out_0, sel_in, sel_out_1, sel_out_0, rw_reg);
 	
-	clk <= not clk after 5 ns;
+	clk <= not clk after 1 ns;
 	
 	test: process
 		begin
-
-		-- read 
+		
+		-- write
 		sel_in <= "00";
 		data_in <= "0000";
 		rw_reg <= '0';
@@ -70,5 +70,6 @@ architecture behavior of register_file_tb is
 		wait for 10 ns;
 		
 	end process;
+	
 end architecture;
 	
