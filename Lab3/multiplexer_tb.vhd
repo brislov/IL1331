@@ -18,10 +18,10 @@ architecture behavior of multiplexer_tb is
 		);
 	end component;
 	
-	signal sel      : std_logic_vector(1 downto 0) := (others => '0');	
-	signal data_in_2 : data_word := (others => '0');
-	signal data_in_1 : data_bus := (others => '0'); 
-	signal data_in_0 : data_word := (others => '0');
+	signal sel       : std_logic_vector(1 downto 0) := (others => '0');	
+	signal data_in_2 : data_word;
+	signal data_in_1 : data_bus; 
+	signal data_in_0 : data_word;
 	signal data_out  : data_word;
 	
 	begin

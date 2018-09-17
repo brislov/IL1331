@@ -20,11 +20,11 @@ architecture behavior of rw_memory_tb is
 		);
 	end component;
 	
-	signal adr  : address_bus := (others => '0');
+	signal adr  : address_bus;
 	signal data : data_bus := (others => 'Z'); 
 	signal clk  : std_logic := '0'; 
-	signal ce   : std_logic := '1'; 
-	signal rw   : std_logic := '1'; 
+	signal ce   : std_logic; 
+	signal rw   : std_logic; 
 	
 	begin
 	unit : rw_memory port map(adr, data, clk, ce, rw);

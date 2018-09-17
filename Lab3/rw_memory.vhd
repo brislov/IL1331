@@ -26,10 +26,12 @@ architecture rtl of rw_memory is
 	begin
 		if rising_edge(clk) then
 			if (ce = '0' and rw = '0') then
+				-- write to memory
 				mem(to_integer(unsigned(adr))) <= data;
 			end if;
 		end if;
 	end process;
+	-- read from memory or set data to high impedance 
 	data <= mem(to_integer(unsigned(adr))) when (ce = '0' and rw = '1') else (others =>'Z');
 	
 end architecture;

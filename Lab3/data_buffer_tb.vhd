@@ -20,13 +20,8 @@ architecture behavior of data_buffer_tb is
 	signal data_out : data_bus; 
 	
 	begin
-	UUT: data_buffer port map(out_en, data_in, data_out);
-	
-	test: process
-		begin
-		data_in <= "0101";
-		wait for 10 ns;
-		out_en <= '1';
-		wait for 10 ns;
-	end process;
+	unit: data_buffer port map(out_en, data_in, data_out);
+
+	out_en <= not out_en after 10 ns;
+
 end architecture;

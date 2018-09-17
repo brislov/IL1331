@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Lab3
-Sun Sep 16 21:49:26 2018
+Mon Sep 17 09:44:19 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Sun Sep 16 21:49:26 2018           ;
+; Analysis & Elaboration Status      ; Successful - Mon Sep 17 09:44:19 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab3                                            ;
 ; Top-level Entity Name              ; rw_memory                                       ;
@@ -157,7 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Sep 16 21:49:25 2018
+    Info: Processing started: Mon Sep 17 09:44:18 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3 --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 0 entities, in source file cpu_package.vhd
@@ -195,8 +195,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file rw_memo
     Info (12023): Found entity 1: rw_memory_tb
 Info (12127): Elaborating entity "rw_memory" for the top level hierarchy
 Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4636 megabytes
-    Info: Processing ended: Sun Sep 16 21:49:26 2018
+    Info: Peak virtual memory: 4635 megabytes
+    Info: Processing ended: Mon Sep 17 09:44:19 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

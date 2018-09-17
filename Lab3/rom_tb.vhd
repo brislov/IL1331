@@ -16,16 +16,15 @@ architecture rtl of rom_tb is
 		ce   : in std_logic
 		);
 	end component;
+	
 	signal adr  : address_bus := (others => '0');
 	signal data : instruction_bus;
 	signal ce   : std_logic := '0';
 	
 	begin
-	UUT: rom 
-		port map(adr, data, ce);
+	UUT: rom port map(adr, data, ce);
 	
-	ce <= not(ce) after 5ns;
-	
-	adr <= ADDRESS_BUS(TO_UNSIGNED(TO_INTEGER(UNSIGNED(adr)) + 1, adr'LENGTH)) AFTER 5ns;
+	ce <= not ce after 5 ns;
+	adr <= address_bus(to_unsigned(to_integer(unsigned(adr)) + 1, adr'length)) after 5 ns; 
 		
 end architecture;

@@ -1,6 +1,5 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
 use work.cpu_package.all;
 
 
@@ -27,10 +26,7 @@ architecture rtl of rom is
 				when "0101" => data <= "0000100110"; -- ADD R2, R1, R2
 				when "0110" => data <= "0001000100"; -- SUB R0, R1, R0
 				when "0111" => data <= "1100001100"; -- BRZ 12
-				when "1000" => data <= "1011000000"; -- NOP
 				when "1001" => data <= "1111000101"; -- BRA 5
-				when "1010" => data <= "1011000000"; -- NOP
-				when "1011" => data <= "1011000000"; -- NOP
 				when "1100" => data <= "1001101111"; -- STR R2, 15
 				when "1101" => data <= "1111001101"; -- BRA 13
 				when others => data <= "1011000000"; -- NOP
