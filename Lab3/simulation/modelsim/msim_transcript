@@ -20,7 +20,7 @@
 # -- Compiling package cpu_package
 # -- Compiling package body cpu_package
 # -- Loading package cpu_package
-# vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd}
+# vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -29,8 +29,8 @@
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_SIGNED
 # -- Loading package cpu_package
-# -- Compiling entity rw_memory
-# -- Compiling architecture rtl of rw_memory
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
 # 
 # vcom -93 -work work {C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -82,13 +82,15 @@
 # 
 #           File in use by: Markus Brislöv  Hostname: DELLXPS139360  ProcessID: 10168
 # 
-#           Attempting to use alternate WLF file "./wlftwrbcmy".
+#           Attempting to use alternate WLF file "./wlfte83sae".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftwrbcmy
+#           Using alternate file: ./wlfte83sae
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /rw_memory_tb/unit
