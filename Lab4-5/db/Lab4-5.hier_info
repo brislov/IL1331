@@ -1,0 +1,16 @@
+|counter
+step => ~NO_FANOUT~
+clk => x[0]~reg0.CLK
+clk => x[1]~reg0.CLK
+clk => x[2]~reg0.CLK
+clk => x[3]~reg0.CLK
+clk => member[0].CLK
+clk => member[1].CLK
+clk => member[2].CLK
+clk => member[3].CLK
+x[0] <= x[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= x[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= x[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= x[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

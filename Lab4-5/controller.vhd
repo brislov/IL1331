@@ -1,0 +1,157 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.numeric_std.all;
+--
+--use work.cpu_package.all; 
+--
+--
+--entity controller is
+--	port( 
+--		adr      : out address_bus; -- unsigned
+--		data     : in program_word; -- unsigned
+--		rw_RWM   : out std_logic; -- read on high
+--		RWM_en   : out std_logic; -- active low
+--		ROM_en   : out std_logic; -- active low
+--		clk      : in std_logic;
+--		reset    : in std_logic; -- active high
+--		rw_reg   : out std_logic; -- read on high
+--		sel_op_1 : out unsigned(1 downto 0);
+--		sel_op_0 : out unsigned(1 downto 0);
+--		sel_in   : out unsigned(1 downto 0);
+--		sel_mux  : out unsigned(1 downto 0);
+--		alu_op   : out unsigned(2 downto 0);
+--		alu_en   : out std_logic; -- active high
+--		z_flag   : in std_logic; -- active high
+--		n_flag   : in std_logic; -- active high
+--		o_flag   : in std_logic; -- active high
+--		out_en   : out std_logic; -- active high
+--		data_imm : out data_word -- signed
+--	); 
+--end entity;
+--
+--
+--architecture rtl of controller is 
+--
+--	component ALU is
+--		port(
+--			op    : in std_logic_vector(2 downto 0);
+--			a     : IN data_word;       
+--			b     : IN data_word;
+--			en    : IN std_logic;
+--			clk   : IN std_logic;
+--			y     : OUT data_word;
+--			n_flag: OUT std_logic;
+--			z_flag: OUT std_logic;
+--			o_flag: OUT std_logic
+--		); 
+--	end component;
+--	component data_buffer is
+--		port(
+--			out_en   : in std_logic;
+--			data_in  : in data_word;
+--			data_out : out data_bus
+--		);
+--	end component;
+--	component multiplexer is 
+--		port(
+--			sel       : in std_logic_vector(1 downto 0);	
+--			data_in_2 : in data_word;
+--			data_in_1 : in data_bus; -- potiential type problem...
+--			data_in_0 : in data_word;
+--			data_out  : out data_word
+--		);
+--	end component;
+--	component register_file is 
+--		port(
+--			clk        : in std_logic;
+--			data_in    : in data_word;
+--			data_out_1 : out data_word;
+--			data_out_0 : out data_word;
+--			sel_in     : in std_logic_vector(1 downto 0);
+--			sel_out_1  : in std_logic_vector(1 downto 0);
+--			sel_out_0  : in std_logic_vector(1 downto 0);
+--			rw_reg     : in std_logic
+--		);
+--	end component;
+--	
+--	-- Output from ALU 
+--	signal Y : data_word; 
+--	
+--	-- Map signals to Controller output
+--	signal s_alu_en  : std_logic;
+--	signal s_alu_op  : std_logic_vector(2 downto 0);
+--	signal s_n_flag, s_z_flag, s_o_flag : std_logic;
+--	signal s_out_en  : std_logic;
+--	signal s_sel_mux : std_logic_vector(1 downto 0);
+--	signal s_data_imm: data_word;
+--	signal s_rw_reg  : std_logic;
+--	
+--	signal s_sel_op_1 : std_logic_vector(1 downto 0);
+--	signal s_sel_op_0 : std_logic_vector(1 downto 0);
+--	signal s_sel_in   : std_logic_vector(1 downto 0);
+--	
+--	
+--	signal rf_data_out_0, rf_data_out_1 : data_word; -- Output from register_file
+--	signal buf_data_out : data_bus; -- Buffer
+--	signal mux_data_out : data_word; -- MUX
+--	
+--	begin
+--	
+--	ALU0 : ALU 
+--		port map(
+--			op     => s_alu_op,
+--			a      => rf_data_out_1,
+--			b      => rf_data_out_0,
+--			en     => s_alu_en,
+--			clk    => clk, 
+--			y      => Y,
+--			n_flag => s_n_flag,
+--			z_flag => s_z_flag,
+--			o_flag => s_o_flag
+--		);
+--	DATA_BUFFER0 : data_buffer 
+--		port map(
+--			out_en   => s_out_en,
+--			data_in  => rf_data_out_1, 
+--			data_out => buf_data_out
+--		);	
+--	MUX0 : multiplexer
+--		port map(
+--			sel       => s_sel_mux,	
+--			data_in_2 => s_data_imm,
+--			data_in_1 => buf_data_out,
+--			data_in_0 => Y,
+--			data_out  => mux_data_out
+--		);
+--	REGISTER_FILE0 : register_file
+--		port map(
+--			clk        => clk,
+--			data_in    => mux_data_out,
+--			data_out_1 => rf_data_out_1,
+--			data_out_0 => rf_data_out_0,
+--			sel_in     => s_sel_in,
+--			sel_out_1  => s_sel_op_1,
+--			sel_out_0  => s_sel_op_0,
+--			rw_reg     => s_rw_reg
+--		);
+--	
+--	
+--	alu_en <= s_alu_en;
+--	alu_op <= to_stdlogicvector(to_unsigned(to_integer(s_alu_op), '3');
+--	
+--	n_flag <= s_n_flag; 
+--	z_flag <= s_z_flag;
+--	o_flag <= s_o_flag;
+--	
+--	out_en <= s_out_en;
+--	
+--	data_imm <= s_data_imm;
+--	
+--	sel_op_1 <= s_sel_op_1;
+--	sel_op_0 <= s_sel_op_0; 
+--	sel_in   <= s_sel_in;
+--	
+--	rw_reg <= s_rw_reg;
+--	
+--	
+--end architecture;
