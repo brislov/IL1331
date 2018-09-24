@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\Markus Brislöv\Documents\IL1331 - VHDL Design\VHDL-Design\Lab4-5\simulation\modelsim
 Ecounter
-Z1 w1537450382
+Z1 w1537532581
 Z2 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
 Z3 DPx4 work 11 cpu_package 0 22 k?iO6=Q<SY@8]JL>U93m^2
 Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
@@ -16,15 +16,15 @@ Z9 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/co
 Z10 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd
 l0
 L8
-V1iOSIB1g7c[gWc=KO5;K]1
+V3cAOMEW?[_UP_h_<_J;j33
 Z11 OV;C;10.1d;51
 31
-Z12 !s108 1537450389.432000
+Z12 !s108 1537532613.354000
 Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd|
 Z14 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd|
 Z15 o-93 -work work -O0
 Z16 tExplicit 1
-!s100 NAR::7jn@Jh9Tf;bVR=NF1
+!s100 aQbJ<8]Bk6I0HXI:d:QR13
 !i10b 1
 Astruct
 R2
@@ -33,11 +33,11 @@ R4
 R5
 R6
 R7
-DEx4 work 7 counter 0 22 1iOSIB1g7c[gWc=KO5;K]1
-l23
-L17
-V<n@_Ue4N]>jHz^Q_TK<eB2
-!s100 C:3igJA]GHc3Xd:VeW3dk0
+DEx4 work 7 counter 0 22 3cAOMEW?[_UP_h_<_J;j33
+l24
+L18
+VFN3i?g4mIKhS8hfY<MNZJ2
+!s100 2[<gTAK@FYj<[g1`DGUOR2
 R11
 31
 R12
@@ -47,7 +47,7 @@ R15
 R16
 !i10b 1
 Ecounter_tb
-Z17 w1537449896
+Z17 w1537532523
 R4
 R2
 R3
@@ -61,7 +61,7 @@ L7
 VoWXTAg?PSREBJBNzDg15:0
 R11
 31
-Z20 !s108 1537450389.263000
+Z20 !s108 1537532613.237000
 Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter_tb.vhd|
 Z22 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter_tb.vhd|
 R15
@@ -75,9 +75,9 @@ R3
 R6
 R7
 DEx4 work 10 counter_tb 0 22 oWXTAg?PSREBJBNzDg15:0
-l25
+l27
 L11
-V9HZ0JE8hk6<C[NagCXg:P2
+VaFPAKO0BRkB<z3zo1zh]I0
 R11
 31
 R20
@@ -85,7 +85,7 @@ R21
 R22
 R15
 R16
-!s100 G6iHKUTIf9H1KTSWf3`8]3
+!s100 Xi8NeGniI_Jb9fZnH1En@3
 !i10b 1
 Pcpu_package
 R4
@@ -104,7 +104,7 @@ R11
 31
 b1
 !i10b 1
-Z26 !s108 1537450389.586000
+Z26 !s108 1537532613.452000
 Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/cpu_package.vhd|
 Z28 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/cpu_package.vhd|
 R15

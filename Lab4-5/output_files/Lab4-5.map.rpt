@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Lab4-5
-Thu Sep 20 15:25:12 2018
+Fri Sep 21 15:23:18 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Sep 20 15:25:11 2018           ;
+; Analysis & Elaboration Status      ; Failed - Fri Sep 21 15:23:18 2018               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab4-5                                          ;
 ; Top-level Entity Name              ; counter                                         ;
@@ -157,7 +157,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Elaboration
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Sep 20 15:25:10 2018
+    Info: Processing started: Fri Sep 21 15:23:17 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4-5 -c Lab4-5 --analysis_and_elaboration
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
@@ -181,18 +181,26 @@ Info (12021): Found 2 design units, including 1 entities, in source file data_bu
 Info (12021): Found 2 design units, including 0 entities, in source file cpu_package.vhd
     Info (12022): Found design unit 1: cpu_package
     Info (12022): Found design unit 2: cpu_package-body
-Info (12021): Found 0 design units, including 0 entities, in source file controller.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file controller.vhd
+    Info (12022): Found design unit 1: controller-rtl
+    Info (12023): Found entity 1: controller
 Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
-    Info (12022): Found design unit 1: counter-struct
+    Info (12022): Found design unit 1: counter-rtl
     Info (12023): Found entity 1: counter
 Info (12021): Found 2 design units, including 1 entities, in source file counter_tb.vhd
     Info (12022): Found design unit 1: counter_tb-testbench
     Info (12023): Found entity 1: counter_tb
 Info (12127): Elaborating entity "counter" for the top level hierarchy
-Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4635 megabytes
-    Info: Processing ended: Thu Sep 20 15:25:12 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Error (10028): Can't resolve multiple constant drivers for net "member[3]" at counter.vhd(64) File: C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd Line: 64
+Error (10029): Constant driver at counter.vhd(30) File: C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd Line: 30
+Error (10028): Can't resolve multiple constant drivers for net "member[2]" at counter.vhd(64) File: C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd Line: 64
+Error (10028): Can't resolve multiple constant drivers for net "member[1]" at counter.vhd(64) File: C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd Line: 64
+Error (10028): Can't resolve multiple constant drivers for net "member[0]" at counter.vhd(64) File: C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab4-5/counter.vhd Line: 64
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus II 64-Bit Analysis & Elaboration was unsuccessful. 6 errors, 1 warning
+    Error: Peak virtual memory: 4635 megabytes
+    Error: Processing ended: Fri Sep 21 15:23:18 2018
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:01
 
 

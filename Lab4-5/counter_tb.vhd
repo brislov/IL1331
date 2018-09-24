@@ -12,21 +12,23 @@ architecture testbench of counter_tb is
 
 	component counter
 		port(
-			step : in std_logic;
-			clk  : in std_logic;
-			x    : out std_logic_vector(operation_size-1 downto 0)
+			step    : in std_logic;
+			clk     : in std_logic;
+			counter : out std_logic_vector(operation_size-1 downto 0);
+			display : out std_logic_vector(6 downto 0)
 		);
 	end component;
 	
-	signal step : std_logic := '0';
-	signal clk  : std_logic := '0';
-	signal x    : std_logic_vector(operation_size-1 downto 0);
+	signal step    : std_logic := '0';
+	signal clk     : std_logic := '0';
+	signal count   : std_logic_vector(operation_size-1 downto 0);
+	signal display : std_logic_vector(6 downto 0);
 	
 	begin
+
+	unit : counter port map(step, clk, reset, count, display);
 	
-	unit : counter port map(step, clk, x);
-	
-	clk  <= not clk after 1 ns;
-	step <= not step after 10 ns; 
+	clk   <= not clk after 1 ns;
+	step  <= not step after 10 ns;
 	
 end architecture;

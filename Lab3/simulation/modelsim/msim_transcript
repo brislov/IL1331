@@ -82,10 +82,10 @@
 # 
 #           File in use by: Markus Brislöv  Hostname: DELLXPS139360  ProcessID: 10168
 # 
-#           Attempting to use alternate WLF file "./wlfte83sae".
+#           Attempting to use alternate WLF file "./wlft581r25".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlfte83sae
+#           Using alternate file: ./wlft581r25
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct

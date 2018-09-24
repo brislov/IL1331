@@ -31,7 +31,7 @@ architecture rtl of rw_memory is
 			end if;
 		end if;
 	end process;
-	-- read from memory or set data to high impedance 
-	data <=(others =>'Z') when (ce = '1') else mem(to_integer(unsigned(adr)));
+	-- set data to high impedance or read from memory 
+	data <= (others =>'Z') when (ce = '1' or rw = '0') else mem(to_integer(unsigned(adr)));
 	
 end architecture;

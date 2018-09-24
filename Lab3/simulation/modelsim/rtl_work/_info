@@ -20,7 +20,7 @@ Z9 OV;C;10.1d;51
 31
 b1
 !i10b 1
-Z10 !s108 1537185064.807000
+Z10 !s108 1537771509.458000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/cpu_package.vhd|
 Z12 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/cpu_package.vhd|
 Z13 o-93 -work work -O0
@@ -60,7 +60,7 @@ L7
 Va9UH2?>0U]I6TN:KI_?OE3
 R9
 31
-Z22 !s108 1537185064.035000
+Z22 !s108 1537771508.920000
 Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file.vhd|
 Z24 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file.vhd|
 R13
@@ -88,7 +88,7 @@ R14
 !s100 Of<jSN[EAOiWD?CjAZ?3F1
 !i10b 1
 Erw_memory
-Z25 w1537185056
+Z25 w1537771211
 R1
 R2
 R15
@@ -103,7 +103,7 @@ L7
 VUDH2Bd;Sa;lFci7Oa7hTN1
 R9
 31
-Z28 !s108 1537185064.522000
+Z28 !s108 1537771509.223000
 Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd|
 Z30 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd|
 R13
@@ -120,7 +120,7 @@ R4
 DEx4 work 9 rw_memory 0 22 UDH2Bd;Sa;lFci7Oa7hTN1
 l23
 L18
-V2lGjJ:TmDNAdVIHXTT8CP0
+VIOWHfhMEO>gPiT3dCh33@0
 R9
 31
 R28
@@ -128,10 +128,10 @@ R29
 R30
 R13
 R14
-!s100 ;I`Hen>fTKVCWglTZIbh?0
+!s100 0Gg`f3E:jdUAo;kb0c]La2
 !i10b 1
 Erw_memory_tb
-Z31 w1537184750
+Z31 w1537186794
 R1
 R2
 R15
@@ -146,7 +146,7 @@ L7
 VG]Mlne9QBP;BhlCAIdY=c2
 R9
 31
-Z34 !s108 1537185064.220000
+Z34 !s108 1537771509.045000
 Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd|
 Z36 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd|
 R13
@@ -163,7 +163,7 @@ R4
 DEx4 work 12 rw_memory_tb 0 22 G]Mlne9QBP;BhlCAIdY=c2
 l29
 L11
-V806^InB`=L<04[?=gUo?V2
+V0=f7]XAicgAaAZ]iEMfk73
 R9
 31
 R34
@@ -171,5 +171,5 @@ R35
 R36
 R13
 R14
-!s100 HmAMg?YQgLP@=Aoa9JKNK1
+!s100 Bk;>TeOI<jdSPJnc22_X=0
 !i10b 1
