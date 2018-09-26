@@ -20,7 +20,7 @@ Z9 OV;C;10.1d;51
 31
 b1
 !i10b 1
-Z10 !s108 1537771509.458000
+Z10 !s108 1537876679.152000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/cpu_package.vhd|
 Z12 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/cpu_package.vhd|
 Z13 o-93 -work work -O0
@@ -45,7 +45,7 @@ R13
 R14
 nbody
 Eregister_file
-Z18 w1537127313
+Z18 w1537876633
 R1
 R2
 R15
@@ -60,7 +60,7 @@ L7
 Va9UH2?>0U]I6TN:KI_?OE3
 R9
 31
-Z22 !s108 1537771508.920000
+Z22 !s108 1537876678.959000
 Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file.vhd|
 Z24 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file.vhd|
 R13
@@ -77,7 +77,8 @@ R4
 DEx4 work 13 register_file 0 22 a9UH2?>0U]I6TN:KI_?OE3
 l26
 L21
-V_V4GCX@XOEm>QT^3B=<^m3
+VTEhKHgDMTTjfgI@`Hc@2>3
+!s100 9<kHLYIR5NFjTR^Ga>kYC1
 R9
 31
 R22
@@ -85,42 +86,39 @@ R23
 R24
 R13
 R14
-!s100 Of<jSN[EAOiWD?CjAZ?3F1
 !i10b 1
-Erw_memory
-Z25 w1537771211
+Eregister_file_tb
+Z25 w1537127363
 R1
 R2
 R15
-R19
 R3
 R4
 R6
-Z26 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd
-Z27 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd
+Z26 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file_tb.vhd
+Z27 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file_tb.vhd
 l0
-L7
-VUDH2Bd;Sa;lFci7Oa7hTN1
+L6
+V<moQ>5MdA>F`D?JEK08?f0
 R9
 31
-Z28 !s108 1537771509.223000
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd|
-Z30 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory.vhd|
+Z28 !s108 1537876678.692000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file_tb.vhd|
+Z30 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/register_file_tb.vhd|
 R13
 R14
-!s100 LH=1^i_K93AeSMQjeQ8hc0
+!s100 4_UEfEEeeBI271Vc7EOc:3
 !i10b 1
-Artl
+Abehavior
 R1
 R2
 R15
-R19
 R3
 R4
-DEx4 work 9 rw_memory 0 22 UDH2Bd;Sa;lFci7Oa7hTN1
-l23
-L18
-VIOWHfhMEO>gPiT3dCh33@0
+DEx4 work 16 register_file_tb 0 22 <moQ>5MdA>F`D?JEK08?f0
+l31
+L10
+VzBN4nAz7CnLO5fa3V=8fo3
 R9
 31
 R28
@@ -128,48 +126,5 @@ R29
 R30
 R13
 R14
-!s100 0Gg`f3E:jdUAo;kb0c]La2
-!i10b 1
-Erw_memory_tb
-Z31 w1537186794
-R1
-R2
-R15
-R19
-R3
-R4
-R6
-Z32 8C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd
-Z33 FC:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd
-l0
-L7
-VG]Mlne9QBP;BhlCAIdY=c2
-R9
-31
-Z34 !s108 1537771509.045000
-Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd|
-Z36 !s107 C:/Users/Markus Brislöv/Documents/IL1331 - VHDL Design/VHDL-Design/Lab3/rw_memory_tb.vhd|
-R13
-R14
-!s100 j=JUWmmK]MkUV[aU<TJ^G2
-!i10b 1
-Abehavior
-R1
-R2
-R15
-R19
-R3
-R4
-DEx4 work 12 rw_memory_tb 0 22 G]Mlne9QBP;BhlCAIdY=c2
-l29
-L11
-V0=f7]XAicgAaAZ]iEMfk73
-R9
-31
-R34
-R35
-R36
-R13
-R14
-!s100 Bk;>TeOI<jdSPJnc22_X=0
+!s100 87YNO;YRk`l2BjSW^<=D43
 !i10b 1
