@@ -30,12 +30,12 @@ architecture rtl of register_file is
 			if rw_reg = '0' then
 				-- write
 				r(to_integer(unsigned(sel_in))) <= data_in; 
-			else	
-				-- read 
-				data_out_1 <= r(to_integer(unsigned(sel_out_1)));
-				data_out_0 <= r(to_integer(unsigned(sel_out_0)));
-			end if;
+			end if;	
 		end if;
 	end process;
+
+	-- read 
+	data_out_1 <= r(to_integer(unsigned(sel_out_1)));
+	data_out_0 <= r(to_integer(unsigned(sel_out_0)));
 	
 end architecture;

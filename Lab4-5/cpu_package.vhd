@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_signed.all;
 
 
-package cpu_package is
+package CPU_Package is
 	
 	constant address_size : integer := 4;
 	constant data_size : integer := 4;
@@ -26,7 +26,7 @@ package cpu_package is
 end package;
 
 
-package body cpu_package is 
+package body CPU_Package is 
 	
 	function add_overflow(a, b : std_logic_vector)
 		return std_logic_vector is

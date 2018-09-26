@@ -1,10 +1,10 @@
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-use work.cpu_package.all;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use work.CPU_Package.all;
 
 
-entity rw_memory is
+entity RWM is
 	port(
 		adr  : in address_bus;
 		data : inout data_bus;
@@ -15,7 +15,7 @@ entity rw_memory is
 end entity;
 
 
-architecture rtl of rw_memory is
+architecture RTL of RWM is
 	
 	type data_buses is array (15 downto 0) of std_logic_vector(3 downto 0);
 	signal mem : data_buses;
@@ -25,13 +25,13 @@ architecture rtl of rw_memory is
 	process(clk)
 	begin
 		if rising_edge(clk) then
-			if (ce = '0' and rw = '0') then
+			if (ce = '0' AND rw = '0') then
 				-- write to memory
 				mem(to_integer(unsigned(adr))) <= data;
 			end if;
 		end if;
 	end process;
-	-- read from memory or set data to high impedance 
-	data <=(others =>'Z') when (ce = '1') else mem(to_integer(unsigned(adr)));
+	-- set data to high impedance or read from memory 
+	data <= (others =>'Z') when (ce = '1' OR rw = '0') else mem(to_integer(unsigned(adr)));
 	
 end architecture;

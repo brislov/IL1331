@@ -1,9 +1,9 @@
-library ieee;
-use ieee.std_logic_1164.all;
-use work.cpu_package.all;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.CPU_Package.all;
 
 
-entity rom is -- read only memory
+entity ROM is -- Read Only Memory
 	port(
 		adr  : in address_bus;
 		data : out instruction_bus;
@@ -12,10 +12,10 @@ entity rom is -- read only memory
 end entity;
 
 
-architecture rtl of rom is
-	begin
+architecture RTL of ROM is
+begin
 	process(ce, adr)
-		begin
+	begin
 		if ce = '0' then
 			case adr is
 				when "0000" => data <= "1010110011"; -- LDI R3,  3
