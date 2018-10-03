@@ -16,13 +16,13 @@ end entity;
 
 architecture rtl of multiplexer is
 	begin
-	process(sel, data_in_2, data_in_1)
+	process(sel, data_in_2, data_in_1, data_in_0)
 		begin
 		case sel is
 			when "00" => data_out <= data_in_0;
 			when "01" => data_out <= data_in_1;
 			when "10" => data_out <= data_in_2;
-			when others => null;
+			when others => data_out <= (others => 'X');
 		end case;
 	end process;
 end architecture;

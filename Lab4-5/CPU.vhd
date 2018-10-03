@@ -64,7 +64,6 @@ architecture Structure of CPU is
 			o_flag   : in std_logic;    -- active high
 			out_en   : out std_logic;   -- active high
 			data_imm : out data_word;   -- signed
-			step     : in std_logic;    -- changing step increments PC
 			stop     : in std_logic
 		); 
 	end component;
@@ -109,8 +108,6 @@ architecture Structure of CPU is
 
 	-- Register File output
 	signal w_DATA_OUT_0, w_DATA_OUT_1 : data_word;
-	
-	signal r_temp_step : std_logic := '0';
 
 begin
 
@@ -155,7 +152,6 @@ begin
 			o_flag   => w_O_FLAG,
 			out_en   => w_OUT_EN,
 			data_imm => w_DATA_IMM,
-			step     => r_temp_step,
 			stop     => i_stop
 		);
 	
@@ -179,7 +175,5 @@ begin
 			sel_out_0  => std_logic_vector(w_SEL_OP_0),
 			rw_reg     => w_RW_REG
 		);
-		
-	r_temp_step <= NOT r_temp_step after 10 ns;
 
 end architecture;

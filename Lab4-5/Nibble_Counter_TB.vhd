@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use work.all;
 use work.CPU_Package.all;
 
 
@@ -30,17 +31,14 @@ begin
 
 	UUT : Nibble_counter port map(clk, load_en, load_val, step, curr_val);
 	
-	clk  <= not clk after 5 ns;
-	step <= not step after 10 ns;
+	clk  <= not clk after 50 ns; -- 50 MHz clock
+	--step <= not step after 1 us;
 	
-	process
+	process 
 	begin
-		wait for 80 ns;
-		load_val <= "0000";
-		load_en  <= '1';
-		wait for 10 ns;
-		load_en <= '0';
-		wait for 999 ns;
-	end process; 
+		wait for 1 us;
+		step <= NOT step;
+		wait for 400 ns;
+	end process;
 	
 end architecture;

@@ -45,7 +45,7 @@ architecture behavior of rw_memory_tb is
 		
 		-- clear 
 		ce <= '1';
-		data <= "ZZZZ";
+		--data <= "ZZZZ";
 		
 		wait for 10 ns;
 		
@@ -58,7 +58,7 @@ architecture behavior of rw_memory_tb is
 		
 		-- clear 
 		ce <= '1';
-		data <= "ZZZZ";
+		--data <= "ZZZZ";
 		wait for 10 ns;
 		
 		-- read 
@@ -69,7 +69,7 @@ architecture behavior of rw_memory_tb is
 		
 		-- clear 
 		ce <= '1';
-		data <= "ZZZZ";
+		--data <= "ZZZZ";
 		wait for 10 ns;
 		
 		-- read 

@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use work.all;
 use work.CPU_Package.all;
 
 
@@ -18,15 +19,15 @@ end entity;
 architecture RTL of Nibble_Counter is
 		
 	signal count    : unsigned(operation_size-1 downto 0) := (others => '0');
-	signal pre_step : std_logic;
+	signal pre_step : std_logic := '0';
 	
 begin
 	
 	process(clk)
-		begin 
+	begin
 		if rising_edge(clk) then 
 			if (load_en = '1') then
-				-- set count to a specific value given by load_val
+				-- set count to value given by load_val
 				count <= load_val;
 			elsif (step /= pre_step) then
 			   -- increment count if step has changed 

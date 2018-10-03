@@ -22,7 +22,7 @@ architecture rtl of multiplexer is
 			when "00" => data_out <= data_in_0;
 			when "01" => data_out <= data_in_1;
 			when "10" => data_out <= data_in_2;
-			when others => null;
+			when others => (others => 'X');
 		end case;
 	end process;
 end architecture;
