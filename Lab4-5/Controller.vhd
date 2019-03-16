@@ -75,9 +75,8 @@ begin
 
 		if reset = '1' then
 			next_state  <= RESET_CONTR;
-		end if;
 	
-		if rising_edge(clk) and stop /= '1' then
+		elsif rising_edge(clk) and stop /= '1' then
 			curr_state := next_state;
 			
 			case curr_state is
